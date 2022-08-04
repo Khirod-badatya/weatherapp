@@ -30,9 +30,7 @@ function WeatherApp() {
     })
     setCityName('')
    }
-
-    
-  return (
+ return (
     <div>
         
         <div className='weatherbg'>
