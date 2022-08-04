@@ -4,7 +4,7 @@ import './WeatherApp.css'
 function WeatherApp() {
 
     const [cityName,setCityName]=useState('');
-    const[data,setData]=useState({
+    const [data,setData]=useState({
         temp:0,
         country:'-',
         humidity:0,
@@ -15,7 +15,7 @@ function WeatherApp() {
 
     const handleclick=(e)=>{
         e.preventDefault();
-    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=cb8e0641dd7e3697b81cb6873008f5f8`).then((resp)=>{
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=cb8e0641dd7e3697b81cb6873008f5f8`).then((resp)=>{
            
 
           
